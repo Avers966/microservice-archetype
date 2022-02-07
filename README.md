@@ -1,2 +1,1 @@
-# microservice-archetype
-
+Maven archetype for create microservice
