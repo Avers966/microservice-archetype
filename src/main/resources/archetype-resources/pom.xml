@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>microservice-${rootArtifactId}</artifactId>
-    <groupId>ru.skillbox.diplom-alpha</groupId>
+    <groupId>ru.skillbox.diplom.group25</groupId>
     <version>${revision}${sha1}${changelist}</version>
     <packaging>pom</packaging>
 
