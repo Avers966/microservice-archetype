@@ -7,4 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Model
  */
 
-public class Model {}
+public class Model {
+
+}
