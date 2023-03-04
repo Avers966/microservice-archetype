@@ -38,11 +38,6 @@
             <artifactId>microservice-${rootArtifactId}-domain</artifactId>
             <version>${revision}${sha1}${changelist}</version>
         </dependency>
-        <dependency>
-            <groupId>ru.skillbox.diplom.group35</groupId>
-            <artifactId>microservice-${rootArtifactId}-db</artifactId>
-            <version>${revision}${sha1}${changelist}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,55 +59,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>ru.skillbox.diplom.group35.Application</mainClass>
-                    <layout>JAR</layout>
-                </configuration>
-                <executions>
-                    <execution>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>ru.skillbox.diplom.group35.Application</mainClass>
-                                    <layout>jar</layout>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <goals>
-                                <goal>repackage</goal>
-                            </goals>
-                        </configuration>
-                    </execution>
-                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${org.mapstruct.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${org.projectlombok.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok-mapstruct-binding</artifactId>
-                            <version>${lombok-mapstruct-binding.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                    <showWarnings>true</showWarnings>
-                </configuration>
+                <artifactId>maven-source-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
