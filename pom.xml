@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.skillbox.diplom-alpha</groupId>
+    <groupId>ru.skillbox.diplom.group35</groupId>
     <artifactId>microservice-archetype</artifactId>
     <version>${revision}${sha1}${changelist}</version>
 
@@ -69,12 +69,12 @@
         <repository>
             <id>nexus</id>
             <name>Releases</name>
-            <url>http://130.61.44.151:8081/repository/maven-releases</url>
+            <url>http://82.202.214.42:8081/repository/maven-releases</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>Snapshot</name>
-            <url>http://130.61.44.151:8081/repository/maven-snapshots</url>
+            <url>http://82.202.214.42:8081/repository/maven-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 

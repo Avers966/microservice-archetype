@@ -2,13 +2,6 @@ server:
   port: 8080
 
 spring:
-  boot:
-    admin:
-      client:
-        enabled: true
-        instance:
-          service-url: http://microservice-${rootArtifactId}:8080
-
   liquibase:
     enabled: false
     drop-first: false

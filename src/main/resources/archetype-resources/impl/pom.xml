@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>microservice-${rootArtifactId}</artifactId>
-        <groupId>ru.skillbox.diplom-alpha</groupId>
+        <groupId>ru.skillbox.diplom.group35</groupId>
         <version>${revision}${sha1}${changelist}</version>
     </parent>
 
@@ -24,22 +24,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.skillbox.diplom-alpha</groupId>
+            <groupId>ru.skillbox.diplom.group35</groupId>
             <artifactId>microservice-${rootArtifactId}-api</artifactId>
             <version>${revision}${sha1}${changelist}</version>
         </dependency>
         <dependency>
-            <groupId>ru.skillbox.diplom-alpha</groupId>
+            <groupId>ru.skillbox.diplom.group35</groupId>
             <artifactId>microservice-${rootArtifactId}-db</artifactId>
             <version>${revision}${sha1}${changelist}</version>
         </dependency>
         <dependency>
-            <groupId>ru.skillbox.diplom-alpha</groupId>
+            <groupId>ru.skillbox.diplom.group35</groupId>
             <artifactId>microservice-${rootArtifactId}-domain</artifactId>
             <version>${revision}${sha1}${changelist}</version>
         </dependency>
         <dependency>
-            <groupId>ru.skillbox.diplom-alpha</groupId>
+            <groupId>ru.skillbox.diplom.group35</groupId>
             <artifactId>microservice-${rootArtifactId}-db</artifactId>
             <version>${revision}${sha1}${changelist}</version>
         </dependency>
@@ -65,7 +65,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>ru.skillbox.diplom.alpha.Application</mainClass>
+                    <mainClass>ru.skillbox.diplom.group35.Application</mainClass>
                     <layout>JAR</layout>
                 </configuration>
                 <executions>
@@ -73,7 +73,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>ru.skillbox.diplom-alpha.Application</mainClass>
+                                    <mainClass>ru.skillbox.diplom.group35.Application</mainClass>
                                     <layout>jar</layout>
                                 </manifest>
                             </archive>
