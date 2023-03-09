@@ -61,6 +61,9 @@ under the License.
                 <fileSet filtered="true" packaged="false">
                     <directory>src/main/java</directory>
                 </fileSet>
+                <fileSet filtered="true" packaged="false">
+                    <directory>src/test/java</directory>
+                </fileSet>
             </fileSets>
         </module>
 
@@ -68,6 +71,9 @@ under the License.
             <fileSets>
                 <fileSet filtered="true" packaged="false">
                     <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" packaged="false">
+                    <directory>src/test/java</directory>
                 </fileSet>
             </fileSets>
         </module>
@@ -77,6 +83,9 @@ under the License.
                 <fileSet filtered="true" packaged="false">
                     <directory>src/main/java</directory>
                 </fileSet>
+                <fileSet filtered="true" packaged="false">
+                    <directory>src/test/java</directory>
+                </fileSet>
             </fileSets>
         </module>
 
@@ -84,6 +93,9 @@ under the License.
             <fileSets>
                 <fileSet filtered="true" packaged="false">
                     <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet filtered="true" packaged="false">
+                    <directory>src/test/java</directory>
                 </fileSet>
                 <fileSet filtered="true" packaged="false">
                     <directory>src/main/resources</directory>
